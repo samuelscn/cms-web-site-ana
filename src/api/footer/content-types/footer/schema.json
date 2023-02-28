@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ContactTitle": {
+      "type": "string",
+      "default": "Contato",
+      "required": true
+    },
+    "ContactDescription": {
+      "type": "text",
+      "required": true
+    },
+    "socialLink": {
+      "displayName": "socialLink",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.social-link"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "default": "anamendesadvocacia@gmail.com",
+      "required": true
+    },
+    "initHour": {
+      "type": "time",
+      "required": true,
+      "default": "08:00"
+    },
+    "endHour": {
+      "type": "time",
+      "required": true,
+      "default": "17:00"
+    }
+  }
+}

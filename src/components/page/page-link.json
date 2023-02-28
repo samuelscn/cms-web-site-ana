@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_page_links",
+  "info": {
+    "displayName": "pageLink"
+  },
+  "options": {},
+  "attributes": {
+    "linkName": {
+      "type": "enumeration",
+      "enum": [
+        "Home",
+        "About",
+        "Practice Area",
+        "Pages",
+        "Contact Us"
+      ],
+      "required": true,
+      "default": "Home"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page": {
+      "type": "string",
+      "default": "home",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "page",
+      "required": true
+    },
+    "Ocupation": {
+      "type": "dynamiczone",
+      "components": [
+        "page.ocupation"
+      ]
+    }
+  }
+}

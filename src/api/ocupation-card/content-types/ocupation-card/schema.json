@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ocupation_cards",
+  "info": {
+    "singularName": "ocupation-card",
+    "pluralName": "ocupation-cards",
+    "displayName": "OcupationCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "ocupation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ocupation.ocupation",
+      "inversedBy": "ocupation_cards"
+    },
+    "completeText": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ocupations",
+  "info": {
+    "singularName": "ocupation",
+    "pluralName": "ocupations",
+    "displayName": "Ocupation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "ocupation_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ocupation-card.ocupation-card",
+      "mappedBy": "ocupation"
+    }
+  }
+}
